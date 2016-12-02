@@ -1,0 +1,50 @@
+PODS:
+  - Alamofire (4.0.0)
+  - AlamofireImage (3.0.0):
+    - Alamofire (~> 4.0)
+  - AlamofireObjectMapper (4.0.0):
+    - Alamofire (~> 4.0)
+    - ObjectMapper (~> 2.0)
+  - DGElasticPullToRefresh (1.1)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - ObjectMapper (2.0.0)
+  - PageMenu (1.2.9)
+  - RAMAnimatedTabBarController (2.0.1)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SnapKit (3.0.0)
+  - SwiftyJSON (3.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - AlamofireImage (~> 3.0)
+  - AlamofireObjectMapper (~> 4.0)
+  - DGElasticPullToRefresh
+  - MJExtension
+  - MJRefresh
+  - ObjectMapper
+  - PageMenu
+  - RAMAnimatedTabBarController
+  - SDWebImage
+  - SnapKit (~> 3.0)
+  - SwiftyJSON (~> 3.1.0)
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  AlamofireImage: 6594aa1139a67dcd36cde6da79ea4e5b318e60fb
+  AlamofireObjectMapper: 9faa3ce5a240efda1b209009a2d6e1e949227abc
+  DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
+  RAMAnimatedTabBarController: 1d20343a6fca7eb433ad67b6e1599dd6e9213292
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SnapKit: 98af0a4e9369d3c58f758967518081dbdc7eb1d9
+  SwiftyJSON: 29b9f2a64f118c07e691667c2ba1efe536acfe0b
+
+PODFILE CHECKSUM: 521cc1db17b123cdff147535292fc2e5c5ed50d9
+
+COCOAPODS: 1.1.0.beta.2

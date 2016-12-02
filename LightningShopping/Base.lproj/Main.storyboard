@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pi5-ld-pJF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Order View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="OrderViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="OrderViewController" customModule="LightningShopping" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GLg-ux-s61"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="123.68815592203899"/>
+        </scene>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="XlP-hf-KVh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Pi5-ld-pJF" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bGU-dZ-qmb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KkK-bl-bwE" kind="relationship" relationship="viewControllers" id="qbD-4b-WkQ"/>
+                        <segue destination="DZT-Zt-FzJ" kind="relationship" relationship="viewControllers" id="QmX-lU-aDe"/>
+                        <segue destination="Sfs-mA-v1W" kind="relationship" relationship="viewControllers" id="c25-EB-62b"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kku-uH-Ovk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
+        </scene>
+        <!--订单-->
+        <scene sceneID="Tr7-OB-ujx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DZT-Zt-FzJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="订单" image="order_un_selected_tab" selectedImage="order_selected_tab" id="QU2-QY-pPO" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.49019607840000001" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="qZg-7g-QNi" id="aZs-z6-dYI"/>
+                        </connections>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5oU-TH-ZMV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lDP-Nv-fyR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8B1-ub-kAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="qZg-7g-QNi" customClass="RAMFumeAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="123.68815592203899"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="X0a-Yf-xkU">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7vf-ds-OZs" customClass="HomeViewController" customModule="LightningShopping" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YZI-jI-YDg"/>
+                        <viewControllerLayoutGuide type="bottom" id="gdq-R5-M82"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="63i-sq-8jN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oGM-kC-elf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JwL-wr-2bM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1798" y="-736"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="Uio-ml-4m7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KkK-bl-bwE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="home_un_selected_tab" selectedImage="home_selected_tab" id="Yal-Le-4De" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="yOffSet">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.49019607840000001" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="UMa-GK-Nbq" id="yLg-Vl-RbK"/>
+                        </connections>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ahP-N1-hZh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7vf-ds-OZs" kind="relationship" relationship="rootViewController" id="y4h-iG-kzx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9r4-40-CQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="UMa-GK-Nbq" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="-736"/>
+        </scene>
+        <!--My Page View Controller-->
+        <scene sceneID="GFN-us-iSr">
+            <objects>
+                <viewController storyboardIdentifier="MyPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HRZ-ct-cBp" customClass="MyPageViewController" customModule="LightningShopping" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u6Q-VF-gal"/>
+                        <viewControllerLayoutGuide type="bottom" id="IQD-L5-pjT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="en9-JP-giI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="quC-qh-329"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOq-vB-OWB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="806"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="lnX-Kw-W1R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sfs-mA-v1W" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="my_un_selected_tab" selectedImage="my_selected_tab" id="JZc-r0-xaj" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.49019607840000001" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="1Vz-V0-oga" id="Ezh-PT-E7a"/>
+                        </connections>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uf0-hf-MLo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HRZ-ct-cBp" kind="relationship" relationship="rootViewController" id="KnF-CC-goI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1XZ-1Y-TKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="1Vz-V0-oga" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="841" y="806"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_selected_tab" width="20" height="20"/>
+        <image name="home_un_selected_tab" width="20" height="20"/>
+        <image name="my_selected_tab" width="20" height="20"/>
+        <image name="my_un_selected_tab" width="20" height="20"/>
+        <image name="order_selected_tab" width="20" height="20"/>
+        <image name="order_un_selected_tab" width="20" height="20"/>
+    </resources>
+</document>
